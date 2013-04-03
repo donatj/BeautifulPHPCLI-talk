@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-fwrite( STDOUT, "\0337" ); // Save Position
+fwrite( STDERR, "\0337" ); // Save Position
 for($i = 0; $i <= 100; $i += 5) {
 	$step = intval($i / 10);
 	fwrite( STDERR, "\0338"); // Restore Position
